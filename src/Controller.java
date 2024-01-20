@@ -15,7 +15,6 @@ public class Controller implements KeyListener {
         v.addKeyListener(this);
 
         updateView();
-        m.printIntArray();
     }
 
     private void reset() {
@@ -26,7 +25,6 @@ public class Controller implements KeyListener {
 
         updateView();
         v.requestFocus();
-        m.printIntArray();
         System.out.println("Reset");
     }
 
@@ -44,7 +42,6 @@ public class Controller implements KeyListener {
             case (39) -> m.move(Direction.RIGHT);
             case (40) -> m.move(Direction.DOWN);
         }
-        m.printIntArray();
 
         updateView();
 

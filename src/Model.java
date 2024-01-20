@@ -45,7 +45,6 @@ public class Model {
             }
         }
 
-        System.out.println(direction);
         for (int i = 0; i < BOARD_SIZE; i++) {
             int[] line = getLine(direction, i);
             line = merge(line);
@@ -128,14 +127,6 @@ public class Model {
         }
 
         board[randomPosition1][randomPosition2] = randomValue;
-    }
-
-    public void printIntArray() {
-        Arrays.stream(board)
-                .forEach(row -> {
-                    Arrays.stream(row).forEach(e -> System.out.print(e + " "));
-                    System.out.println();
-                });
     }
 
     public void setScore(int score) {

@@ -58,7 +58,7 @@ public class View extends JPanel {
         message += "    Your score is " + score;
 
         return JOptionPane.showOptionDialog(this, message, "2048",
-                JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+                JOptionPane.OK_CANCEL_OPTION, win ? JOptionPane.INFORMATION_MESSAGE : JOptionPane.ERROR_MESSAGE, null, options, options[0]);
     }
 
     public int getScore() {

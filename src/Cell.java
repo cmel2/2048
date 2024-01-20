@@ -42,67 +42,53 @@ public class Cell extends JPanel {
             case(0) -> {
                 bgColor = null;
                 setTextColor(Color.GRAY);
-                this.value = 0;
             }
             case (2) -> {
                 setBgColor(new Color(238, 228, 218));
                 setTextColor(new Color(119, 110, 101));
-                this.value = 2;
             }
             case (4) -> {
                 setBgColor(new Color(238, 225, 201));
                 setTextColor(new Color(119, 110, 101));
-                this.value = 4;
             }
             case (8) -> {
                 setBgColor(new Color(232, 180, 129));
                 setTextColor(Color.WHITE);
-                this.value = 8;
             }
             case (16) -> {
                 setBgColor(new Color(232, 154, 108));
                 setTextColor(Color.WHITE);
-                this.value = 16;
             }
             case (32) -> {
                 setBgColor(new Color(230, 131, 102));
                 setTextColor(Color.WHITE);
-                this.value = 32;
             }
             case (64) -> {
                 setBgColor(new Color(228, 104, 72));
                 setTextColor(Color.WHITE);
-                this.value = 64;
              }
             case (128) -> {
                 setBgColor(new Color(232, 209, 127));
                 setTextColor(Color.WHITE);
-                this.value = 128;
             }
             case (256) -> {
                 setBgColor(new Color(232, 205, 112));
                 setTextColor(Color.WHITE);
-                this.value = 256;
             }
             case (512) -> {
                 setBgColor(new Color(230, 201, 100));
                 setTextColor(Color.WHITE);
-                this.value = 512;
             }
             case (1024) -> {
                 setBgColor(new Color(237, 197, 63));
                 setTextColor(Color.WHITE);
-                this.value = 1024;
             }
             case (2048) -> {
                 setBgColor(new Color(232, 206, 8));
                 setTextColor(Color.WHITE);
-                this.value = 2048;
-            }
-            default -> {
-                return;
             }
         }
+        this.value = value;
 
         repaint();
     }
